@@ -5,7 +5,7 @@ pipeline {
             steps {
                 checkout ([$class: 'GitSCM', 
                 branches: [[name: '*/master']], 
-                userRemoteConfigs: [[url: '']] ])
+                userRemoteConfigs: [[url: 'https://github.com/somasekharkongurutu/addressbook.git']] ])
             }
         }
         stage ('Compiling Code') {
